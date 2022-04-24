@@ -1,0 +1,151 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-04-24T07:20:00.268Z",
+        "line": 3,
+        "name": "Payment page",
+        "description": "",
+        "id": "product-payment;payment-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6244776800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user goes to N11 Home Page",
+            "match": {
+              "location": "uiN11.stepdefinitions.N11StepDefinitions.user_goes_to_n11_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8033432200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "\"kulaklık\" icin arama yapar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"kulaklık\"",
+                  "offset": 0
+                }
+              ],
+              "location": "uiN11.stepdefinitions.N11StepDefinitions.icinAramaYapar(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 187028900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "sonucun \"kulaklık\" icerdigini test eder",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"kulaklık\"",
+                  "offset": 8
+                }
+              ],
+              "location": "uiN11.stepdefinitions.N11StepDefinitions.sonucunIcerdiginiTestEder(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2419468300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Gelen sonuclar yorum sayisina göre siralanir.",
+            "match": {
+              "location": "uiN11.stepdefinitions.N11StepDefinitions.gelenSonuclarYorumSayisinaGöreSiralanir()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2193099400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Gelen urunlerden ucretsiz kargo olanlar listelenir.",
+            "match": {
+              "location": "uiN11.stepdefinitions.N11StepDefinitions.gelenUrunlerdenUcretsizKargoOlanlarListelenir()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class\u003d\u0027button-group\u0027]\"}\n  (Session info: chrome\u003d100.0.4896.127)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027DESKTOP-1C5NFC6\u0027, ip: \u0027192.168.1.74\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [1d4fdce82c6744acea738153c4222066, findElement {using\u003dxpath, value\u003d//div[@class\u003d\u0027button-group\u0027]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\\Users\\merco\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56362}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56362/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 1d4fdce82c6744acea738153c4222066\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\r\n\tat com.sun.proxy.$Proxy21.click(Unknown Source)\r\n\tat uiN11.stepdefinitions.N11StepDefinitions.gelenSonuclardanIlkSayfadakiBirinciVeSonuncuUrunSepeteEklenir(N11StepDefinitions.java:142)\r\n\tat ✽.Gelen sonuclardan ilk sayfadaki birinci ve sonuncu urun sepete eklenir.(file:///C:/Users/merco/Masaüstü/n11Project/src/test/resources/uiN11Feature/n11OdemeIslemi.feature:9)\r\n",
+              "duration": 21247359600,
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "Gelen sonuclardan ilk sayfadaki birinci ve sonuncu urun sepete eklenir.",
+            "match": {
+              "location": "uiN11.stepdefinitions.N11StepDefinitions.gelenSonuclardanIlkSayfadakiBirinciVeSonuncuUrunSepeteEklenir()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "Sepette en ucuz urun adedi 2 yapılır ve misafir kullanıcı olarak odemeye gecilir.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 27
+                }
+              ],
+              "location": "uiN11.stepdefinitions.N11StepDefinitions.sepetteEnUcuzUrunAdediYapılırVeMisafirKullanıcıOlarakOdemeyeGecilir(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "sayfayi kapatir",
+            "match": {
+              "location": "uiN11.stepdefinitions.N11StepDefinitions.sayfayiKapatir()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Product"
+          }
+        ]
+      }
+    ],
+    "name": "Product payment",
+    "description": "",
+    "id": "product-payment",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/uiN11Feature/n11OdemeIslemi.feature",
+    "tags": [
+      {
+        "name": "@Product",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
